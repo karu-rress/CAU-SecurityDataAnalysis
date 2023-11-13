@@ -45,3 +45,7 @@ apply() 함수 이용.
 
 Lasso는 automatic feature selection이 될 수 있음.
 - 만약 특정 feature가 제거됐다면, 왜 제거됐는지 생각해보자.
+
+
+Threashold 를 직접 만들 수는 없음. 일일이 계산 후 배열로 만들어 이걸 test로 만듦.\
+그레디언트 부스팅은 데이터가 크면.. 시간이 오래걸림(XGBOOST)\\=>  
