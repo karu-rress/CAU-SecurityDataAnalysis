@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="sugar <= 4.15\nsamples = 4872\nvalue = [1199, 3673]\nclass = white (+)", fillcolor="#7abded"] ;
+1 [label="sugar <= 1.625\nsamples = 2647\nvalue = [1116, 1531]\nclass = white (+)", fillcolor="#c9e4f8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="sugar <= 1.375\nsamples = 941\nvalue = [111, 830]\nclass = white (+)", fillcolor="#53aae8"] ;
+1 -> 2 ;
+3 [label="samples = 472\nvalue = [9, 463]\nclass = white (+)", fillcolor="#3d9fe6"] ;
+2 -> 3 ;
+4 [label="samples = 469\nvalue = [102, 367]\nclass = white (+)", fillcolor="#70b8ec"] ;
+2 -> 4 ;
+5 [label="alcohol <= 11.083\nsamples = 1706\nvalue = [1005, 701]\nclass = red (-)", fillcolor="#f7d9c3"] ;
+1 -> 5 ;
+6 [label="samples = 1042\nvalue = [746, 296]\nclass = red (-)", fillcolor="#efb388"] ;
+5 -> 6 ;
+7 [label="samples = 664\nvalue = [259, 405]\nclass = white (+)", fillcolor="#b8dcf6"] ;
+5 -> 7 ;
+8 [label="sugar <= 6.25\nsamples = 2225\nvalue = [83, 2142]\nclass = white (+)", fillcolor="#41a1e6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="pH <= 3.275\nsamples = 502\nvalue = [60, 442]\nclass = white (+)", fillcolor="#54aae9"] ;
+8 -> 9 ;
+10 [label="samples = 339\nvalue = [23, 316]\nclass = white (+)", fillcolor="#47a4e7"] ;
+9 -> 10 ;
+11 [label="samples = 163\nvalue = [37, 126]\nclass = white (+)", fillcolor="#73baed"] ;
+9 -> 11 ;
+12 [label="alcohol <= 14.475\nsamples = 1723\nvalue = [23, 1700]\nclass = white (+)", fillcolor="#3c9ee5"] ;
+8 -> 12 ;
+13 [label="samples = 1722\nvalue = [22, 1700]\nclass = white (+)", fillcolor="#3c9ee5"] ;
+12 -> 13 ;
+14 [label="samples = 1\nvalue = [1, 0]\nclass = red (-)", fillcolor="#e58139"] ;
+12 -> 14 ;
+}
